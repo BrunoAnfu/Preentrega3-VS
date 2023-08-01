@@ -1,0 +1,50 @@
+.footer{
+    background-color: #000;
+    display: flex;
+    min-height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer p{
+    color: #c9c9c9;
+    font-size: 1rem;
+}
+.footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formulario{
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+::placeholder {
+    color: #aaa;
+}
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+.footer img{
+    width: auto;
+    height: 200px;
+}
