@@ -39,23 +39,6 @@
     color: white;
     padding-left: 3%;
 }  
-@media (max-width:1025px){
-    .cuadriceps{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .img-cuadriceps{
-            width: 100%;
-            height: auto;
-            margin-bottom: 5%;
-            margin-top: 0px;
-        }
-    .card-cuadriceps-text{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    }
-}
 
 
 .card-gluteo{
@@ -63,6 +46,7 @@
     padding: 10px;
     border-radius: 1rem;
     margin-top: 24px;
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     .gluteo{
@@ -96,20 +80,5 @@
     color: white;
     padding-left: 3%;
 }  
-@media (max-width:1025px){
-    #gluteo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .img-gluteo{
-            width: 100%;
-            height: auto;
-            margin-bottom: 5%;
-            margin-top: 0px;
-        }
-    .card-gluteo-text{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    }
-}
+
+

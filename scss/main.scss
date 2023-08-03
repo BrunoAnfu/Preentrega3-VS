@@ -3,6 +3,8 @@
 @import "../partials/mains";
 @import "../partials/header";
 @import "../partials/maininferior";
+@import "../partials/mainzonamedia";
+
 
 *{
     padding: 0%;
@@ -118,5 +120,37 @@
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
+    }
+}
+@media (max-width:1025px){
+    #gluteo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-gluteo{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+            margin-top: 0px;
+        }
+    .card-gluteo-text{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    }
+    .cuadriceps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-cuadriceps{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+            margin-top: 0px;
+        }
+    .card-cuadriceps-text{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     }
 }
