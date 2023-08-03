@@ -1,0 +1,115 @@
+.maininferior{
+    background-color: #c9c9c9;
+    padding: 29px;
+    padding-top: 150px;
+    min-height: 90vh;
+    width: 100%;
+}
+.card-cuadriceps{
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 1rem;
+    .cuadriceps{
+        display: flex;
+        .img-cuadriceps{
+            border-radius: 1rem;
+            height: auto;
+            margin-top: 8%;
+        }
+    }
+    .card-cuadriceps-text{
+        color: white;
+        padding: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        .card-cuadriceps-titulo{
+            background-color: white;
+            color: #212529;
+            padding: 3px;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 170%;
+        }
+    li{
+        font-size: 130%;
+    }  
+    }
+}
+.card-cuadriceps-texto{
+    color: white;
+    padding-left: 3%;
+}  
+@media (max-width:1025px){
+    .cuadriceps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-cuadriceps{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+            margin-top: 0px;
+        }
+    .card-cuadriceps-text{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    }
+}
+
+
+.card-gluteo{
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 1rem;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    .gluteo{
+        display: flex;
+        flex-direction: row-reverse;
+        .img-gluteo{
+            border-radius: 1rem;
+            height: auto;
+            margin-top: 8%;
+        }
+    }
+    .card-gluteo-text{
+        color: white;
+        padding: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        .card-gluteo-titulo{
+            background-color: white;
+            color: #212529;
+            padding: 3px;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 170%;
+        }
+    li{
+        font-size: 130%;
+    }  
+    }
+}
+.card-gluteo-texto{
+    color: white;
+    padding-left: 3%;
+}  
+@media (max-width:1025px){
+    #gluteo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .img-gluteo{
+            width: 100%;
+            height: auto;
+            margin-bottom: 5%;
+            margin-top: 0px;
+        }
+    .card-gluteo-text{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    }
+}

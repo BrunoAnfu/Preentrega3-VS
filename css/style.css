@@ -93,6 +93,10 @@ input:focus {
 p {
   font-size: 1.5rem; }
 
+.p-index {
+  padding-left: 8%;
+  padding-right: 8%; }
+
 h1 {
   text-decoration: underline; }
 
@@ -142,11 +146,6 @@ h2 {
   background-color: #c9c9c9;
   padding-bottom: 24px; }
 
-* {
-  padding: 0%;
-  margin: 0%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-
 .header img {
   height: 100px;
   width: auto; }
@@ -154,6 +153,108 @@ h2 {
 .header li:hover {
   background-color: #000;
   font-weight: bold; }
+
+.maininferior {
+  background-color: #c9c9c9;
+  padding: 29px;
+  padding-top: 150px;
+  min-height: 90vh;
+  width: 100%; }
+
+.card-cuadriceps {
+  background-color: #212529;
+  padding: 10px;
+  border-radius: 1rem; }
+  .card-cuadriceps .cuadriceps {
+    display: flex; }
+    .card-cuadriceps .cuadriceps .img-cuadriceps {
+      border-radius: 1rem;
+      height: auto;
+      margin-top: 8%; }
+  .card-cuadriceps .card-cuadriceps-text {
+    color: white;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%; }
+    .card-cuadriceps .card-cuadriceps-text .card-cuadriceps-titulo {
+      background-color: white;
+      color: #212529;
+      padding: 3px;
+      border-radius: 1rem;
+      text-align: center;
+      font-size: 170%; }
+    .card-cuadriceps .card-cuadriceps-text li {
+      font-size: 130%; }
+
+.card-cuadriceps-texto {
+  color: white;
+  padding-left: 3%; }
+
+@media (max-width: 1025px) {
+  .cuadriceps {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .cuadriceps .img-cuadriceps {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5%;
+      margin-top: 0px; }
+    .cuadriceps .card-cuadriceps-text {
+      padding-left: 5%;
+      padding-right: 5%; } }
+
+.card-gluteo {
+  background-color: #212529;
+  padding: 10px;
+  border-radius: 1rem;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column; }
+  .card-gluteo .gluteo {
+    display: flex;
+    flex-direction: row-reverse; }
+    .card-gluteo .gluteo .img-gluteo {
+      border-radius: 1rem;
+      height: auto;
+      margin-top: 8%; }
+  .card-gluteo .card-gluteo-text {
+    color: white;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%; }
+    .card-gluteo .card-gluteo-text .card-gluteo-titulo {
+      background-color: white;
+      color: #212529;
+      padding: 3px;
+      border-radius: 1rem;
+      text-align: center;
+      font-size: 170%; }
+    .card-gluteo .card-gluteo-text li {
+      font-size: 130%; }
+
+.card-gluteo-texto {
+  color: white;
+  padding-left: 3%; }
+
+@media (max-width: 1025px) {
+  #gluteo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #gluteo .img-gluteo {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5%;
+      margin-top: 0px; }
+    #gluteo .card-gluteo-text {
+      padding-left: 5%;
+      padding-right: 5%; } }
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 @media (min-width: 320px) and (max-width: 629px) {
   .main {
