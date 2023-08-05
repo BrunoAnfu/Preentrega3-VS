@@ -33,6 +33,7 @@ iframe{
     margin-top: 25px;
     .img-zm{
         border-radius: 1rem;
+        justify-self: center;
     }
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 

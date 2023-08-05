@@ -35,7 +35,8 @@ iframe {
   gap: 0px 0px;
   grid-template-areas: "text-zm text-zm text-zm" "img-zm ul-zm ul-zm" "img-zm ul-zm ul-zm"; }
   .card-zm .img-zm {
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    justify-self: center; }
 
 .text-zm {
   grid-area: text-zm; }
@@ -50,7 +51,7 @@ iframe {
   background-color: #000;
   display: flex;
   min-height: 15vh;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%; }
 
@@ -96,6 +97,12 @@ input:focus {
   width: auto;
   height: 200px; }
 
+.footer-text {
+  width: 412px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center; }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -121,7 +128,8 @@ p {
   padding-right: 8%; }
 
 h1 {
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-align: center; }
 
 .grid {
   display: grid;
@@ -130,7 +138,7 @@ h1 {
   height: 550px; }
 
 .grid figure p {
-  background-color: #000; }
+  background-color: #212529; }
 
 .imghvr-push-up {
   border-radius: 1.5rem;
@@ -147,27 +155,28 @@ h2 {
   padding-top: 20px;
   text-decoration: underline; }
 
-.grilla {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  max-height: 700px; }
-
-.dorsalera {
-  height: 70%;
-  width: auto; }
+.img-text-index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100vh; }
+  .img-text-index .dorsalera {
+    height: 70%; }
+  .img-text-index .ejercicio {
+    margin-right: 3%; }
 
 .main-hombro {
   padding-top: 150px;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  background-color: #c9c9c9;
-  padding-bottom: 24px; }
+  background-color: #c9c9c9; }
+  .main-hombro .tren-superior {
+    padding-top: 10px;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 24px; }
 
 .header img {
   height: 100px;
@@ -176,6 +185,12 @@ h2 {
 .header li:hover {
   background-color: #000;
   font-weight: bold; }
+
+.nav-link {
+  margin-left: 20px; }
+
+.offcanvas-header {
+  margin-left: 20px; }
 
 .maininferior {
   background-color: #c9c9c9;
@@ -258,7 +273,8 @@ h2 {
   .main-zonamedia #anatomia-abdomen {
     list-style-type: decimal;
     font-size: 130%;
-    color: white; }
+    color: white;
+    text-align: center; }
   .main-zonamedia .musculacion-abdomen {
     list-style-type: decimal;
     font-size: 130%; }
@@ -267,7 +283,7 @@ h2 {
     background-image: url(../recursos/zm-rutina.jpg);
     border-radius: 1rem; }
     .main-zonamedia .rutina-zm .zm-texto {
-      background-color: rgba(31, 31, 31, 0.527);
+      background-color: rgba(0, 0, 0, 0.95);
       border-radius: 1rem;
       padding: 1%; }
 
@@ -275,9 +291,15 @@ h2 {
   .card-zm {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin: 3%; }
   .rutina-zm {
-    background-image: url(../recursos/abdomen.jpg); } }
+    background-image: url(../recursos/abdomen.jpg);
+    margin: 3%; } }
+
+@media (max-width: 426px) {
+  .img-zm {
+    width: 100%; } }
 
 * {
   padding: 0%;
@@ -288,27 +310,30 @@ h2 {
   .main {
     display: flex;
     flex-direction: column; }
-  .dorsalera {
-    height: auto; }
-  .grilla {
+  .img-text-index {
     display: flex;
     flex-direction: column; }
+    .img-text-index .dorsalera {
+      width: 100vw;
+      margin-left: 0;
+      padding: 3%; }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     height: auto;
     width: 265px; }
-  .main-hombro {
-    padding-top: 150px;
+  .main-hombro .tren-superior {
+    padding-top: 10px;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 24px; }
   .p-index {
-    margin-top: 185px; }
+    margin-top: 15px; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -320,25 +345,30 @@ h2 {
     flex-direction: column; }
   .dorsalera {
     height: auto; }
-  .grilla {
+  .img-text-index {
     display: flex;
     flex-direction: column; }
+    .img-text-index .dorsalera {
+      width: 100vw;
+      margin-left: 0;
+      padding: 3%; }
   .p-index {
-    margin-top: 85px; }
+    margin-top: 10px; }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
     height: auto;
     width: 580px; }
-  .main-hombro {
-    padding-top: 150px;
+  .main-hombro .tren-superior {
+    padding-top: 10px;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 24px; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -350,11 +380,15 @@ h2 {
     flex-direction: column; }
   .dorsalera {
     height: auto; }
-  .grilla {
+  .img-text-index {
     display: flex;
     flex-direction: column; }
+    .img-text-index .dorsalera {
+      width: 100vw;
+      margin-left: 0;
+      padding: 3%; }
   .p-index {
-    margin-top: 200px; }
+    margin-top: 20px; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -365,14 +399,15 @@ h2 {
     grid-template-rows: 3fr;
     height: auto;
     width: 750px; }
-  .main-hombro {
-    padding-top: 150px;
+  .main-hombro .tren-superior {
+    padding-top: 10px;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center; } }
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 24px; } }
 
 @media (max-width: 1025px) {
   #gluteo {
@@ -398,4 +433,7 @@ h2 {
       margin-top: 0px; }
     .cuadriceps .card-cuadriceps-text {
       padding-left: 5%;
-      padding-right: 5%; } }
+      padding-right: 5%; }
+  .footer-text {
+    width: 100%;
+    margin: 2%; } }

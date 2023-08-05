@@ -9,19 +9,21 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @media (min-width: 320px) and (max-width:629px){
     .main{
         display: flex;
         flex-direction: column;
     }
-    .dorsalera{
-        height: auto;
-    }
-    .grilla{
+    .img-text-index{
         display: flex;
         flex-direction: column;
+        .dorsalera{
+            width: 100vw;
+            margin-left: 0;
+            padding: 3%;
+        }
     }
     .grid{
         display: grid;
@@ -30,17 +32,20 @@
         height: auto;
         width: 265px;
     }
-    .main-hombro {
-        padding-top: 150px;
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
+    .main-hombro{
+        .tren-superior {
+            padding-top: 10px;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 24px;
+        }
     }
     .p-index{
-        margin-top: 185px;
+        margin-top: 15px;
     }
     .footer{
         display: flex;
@@ -56,12 +61,17 @@
     .dorsalera{
         height: auto;
     }
-    .grilla{
+    .img-text-index{
         display: flex;
         flex-direction: column;
+        .dorsalera{
+            width: 100vw;
+            margin-left: 0;
+            padding: 3%;
+        }
     }
     .p-index{
-        margin-top: 85px;
+        margin-top: 10px;
     }
     .grid{
         display: grid;
@@ -70,14 +80,17 @@
         height: auto;
         width: 580px;
     }
-    .main-hombro {
-        padding-top: 150px;
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
+    .main-hombro{
+        .tren-superior {
+            padding-top: 10px;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 24px;
+        }
     }
     .footer{
         display: flex;
@@ -93,12 +106,17 @@
     .dorsalera{
         height: auto;
     }
-    .grilla{
+    .img-text-index{
         display: flex;
         flex-direction: column;
+        .dorsalera{
+            width: 100vw;
+            margin-left: 0;
+            padding: 3%;
+        }
     }
     .p-index{
-        margin-top: 200px;
+        margin-top: 20px;
     }
     .footer{
         display: flex;
@@ -112,14 +130,17 @@
         height: auto;
         width: 750px;
     }
-    .main-hombro {
-        padding-top: 150px;
-        min-height: 90vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
+    .main-hombro{
+        .tren-superior {
+            padding-top: 10px;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 24px;
+        }
     }
 }
 @media (max-width:1025px){
@@ -152,5 +173,9 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    }
+    .footer-text{
+        width: 100%;
+        margin: 2%;
     }
 }
